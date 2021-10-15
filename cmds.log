@@ -1,0 +1,834 @@
+    1  passwd
+    2  wget    https://s3.amazonaws.com/amazon-reviews-pds/tsv/amazon_reviews_us_Books_v1_02.tsv.gz
+    3  exit
+    4  pwd
+    5  ls
+    6  mkdir projects
+    7  cd projects/
+    8  ls
+    9  git init
+   10  history > cmds.log
+   11  history
+   12  pwd
+   13  ls -a
+   14  git status
+   15  git add cmds.log 
+   16  git status
+   17  git commit -m "Committing my history"
+   18  git config --global user.email "jihan.yehia@sjsu.edu"
+   19  git config --global user.name  "Jihan Yehia"
+   20  git commit -m "Committing my history"
+   21  git status
+   22  git remote add origin https://github.com/jihanyehia/worksheet1.git
+   23  git push -u origin master
+   24  history > cmds.log
+   25  git status
+   26  git add cmds.log
+   27  git commit -m "Updating my history"
+   28  git push origin master
+   29  cd ..
+   30  ls
+   31  mkdir test
+   32  cd test
+   33  git clone https://github.com/jihanyehia/worksheet1.git
+   34  ls
+   35  cd worksheet1/
+   36  ls
+   37  cd ..
+   38  ls
+   39  cd ..
+   40  ls
+   41  rm -r  test
+   42  ls
+   43  'pwd'
+   44  pwd
+   45  `pwd`
+   46  echo pwd
+   47  echo `pwd`
+   48  vi ~/.bashrc
+   49  ls /home
+   50  ls /root
+   51  sudo ls /root
+   52  exit
+   53  pwd
+   54  ls
+   55  cd projects
+   56  ls
+   57  cd ..
+   58  exit
+   59  history
+   60  ls -l
+   61  ls -latr /
+   62  exit
+   63  pwd
+   64  ls
+   65  gunzip amazon_reviews_us_Books_v1_02.tsv.gz 
+   66  ls
+   67  head amazon_reviews_us_Books_v1_02.tsv 
+   68  head cut -f12 amazon_reviews_us_Books_v1_02.tsv 
+   69  cut -f12 amazon_reviews_us_Books_v1_02.tsv | head
+   70  cut -f12 amazon_reviews_us_Books_v1_02.tsv > verified.txt
+   71  vi verified.txt 
+   72  grep Y verified.txt > Y.txt
+   73  wc Y.txt 
+   74  grep N verified.txt >N.txt
+   75  wc N.txt 
+   76  wc Y.txt > counts.txt
+   77  wc N.txt >> counts.txt 
+   78  cat counts.txt 
+   79  vi counts.txt 
+   80  pwd
+   81  ls
+   82  cd projects/
+   83  ls
+   84  .
+   85  cd .
+   86  cd ..
+   87  mkdir worksheet2
+   88  mv counts.txt verified.txt worksheet2/
+   89  ls
+   90  cd worksheet2
+   91  ls
+   92  git init
+   93  touch counts.txt 
+   94  history > cmds.log
+   95  touch cmds.log 
+   96  git status
+   97  git add counts.txt
+   98  git add cmds.log 
+   99  git status
+  100  git commit -m "Worksheet 2"
+  101  git remote add origin https://github.com/jihanyehia/worksheet2.git
+  102  git branch -M main
+  103  git push -u origin main
+  104  git status
+  105  git remote add origin https://github.com/jihanyehia/worksheet2.git
+  106  git branch -M main
+  107  git push -u origin main
+  108  git branch -M main
+  109  git push -u origin main
+  110  git branch -M main
+  111  git push -u origin main
+  112  ll
+  113  cd ..
+  114  ;;
+  115  ll
+  116  pwd
+  117  mkdir test
+  118  cd test
+  119  git clone https://github.com/jihanyehia/worksheet2.git
+  120  ls
+  121  cd worksheet2/
+  122  ls
+  123  cd ../..
+  124  ls
+  125  rm -r test
+  126  rm -rf test
+  127  ls
+  128  exit
+  129  echo $Home
+  130  cd
+  131  cd ~
+  132  pwd
+  133  etc/passwd
+  134  cat /etc/
+  135  cat /etc/passwd
+  136  groups
+  137  groups <yehia>
+  138  cat /etc/group
+  139  mkdir temp
+  140  ls-l
+  141  ls
+  142  ls -l
+  143  chmod 6 temp
+  144  ls -l
+  145  chmod 675 temp
+  146  ls -l
+  147  rmdir -R temp
+  148  rmdir temp
+  149  l -l
+  150  mkdir temp
+  151  ls -l
+  152  chmod u=rw temp
+  153  ls -l
+  154  cd temp
+  155  ls temp
+  156  ls -l temp
+  157  chmod u=rwx temp
+  158  ls -l temp
+  159  ls temp
+  160  cd temp
+  161  mkdir temp2
+  162  cd ..
+  163  chmod u=rw temp
+  164  cd temp
+  165  ls -l temp
+  166  ls - temp
+  167  ls temp
+  168  man mv
+  169  ls
+  170  head -n 1 amazon_reviews_us_Books_v1_02.tsv 
+  171  pwd
+  172  cat /etc/passwd
+  173  cat /etc/group
+  174  mkdir temp
+  175  chmod u=rw temp
+  176  ls temp
+  177  ls -l temp
+  178  cd temp
+  179  mkdir directory1
+  180  ls
+  181  mv directory1/ directory2/
+  182  ls
+  183  cp -r directory2/ directory3/
+  184  ls
+  185  ls /proc/ | grep "mem"
+  186  ls /proc/ | grep "cpu"
+  187  head /proc/meminfo 
+  188  tail /proc/cpuinfo 
+  189  ls -lh
+  190  cut -f 14 amazon_reviews_us_Books_v1_02.tsv | grep -i "\bgreat\b" | wc
+  191  script a1.txt
+  192  vi a1.txt 
+  193  perl -pe 's/\x1b\[[0-9;]*[mG]//g' a.txt > a.txt.clean
+  194  perl -pe 's/\x1b\[[0-9;]*[mG]//g' a1.txt > a.txt.clean
+  195  vi a.txt.clean 
+  196  tr -cd '\11\12\15\40-\176' < a.txt.clean > a.txt.clean2
+  197  vi a.txt.clean2
+  198  sed -i "s///g" a.txt.clean2
+  199  vi a.txt.clean2
+  200  git init
+  201  ls -l
+  202  git commit -m "Assignment1"
+  203  git log
+  204  git status
+  205  git add a.txt.clean2
+  206  git commit -m "Assignment 1"
+  207  git status
+  208  pwd
+  209  cd projects
+  210  ls
+  211  cd ..
+  212  ls -alh
+  213  mkdir assignment1
+  214  mv a.txt.clean2 assignment1/
+  215  ls assignment1/
+  216  cd assignment1/
+  217  git init
+  218  git add a.txt.clean2 
+  219  git status
+  220  git commit -m "Assignment1"
+  221  git remote add origin https://github.com/jihanyehia/Assignment1.git
+  222  git branch -M main
+  223  git push -u origin main
+  224  exit
+  225  head -n1 amazon_reviews_us_Books_v1_02.tsv 
+  226  head -n4 amazon_reviews_us_Books_v1_02.tsv 
+  227  cut -f9 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head
+  228  cut -f9 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr
+  229  ls
+  230  exit
+  231  head -n1 amazon_reviews_us_Books_v1_02.tsv
+  232  cut -f2 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head
+  233  cut -f4 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head
+  234  cut -f9 amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr 
+  235  history > cmds.log
+  236  exit
+  237  head -n1 amazon_reviews_us_Books_v1_02.tsv
+  238  cat -f2 amazon_reviews_us_Books_v1_02.tsv | grep "50122160
+  239  cat -f2 amazon_reviews_us_Books_v1_02.tsv | grep "50122160" >test.tsv
+  240  cat amazon_reviews_us_Books_v1_02.tsv | grep "50122160" > test.tsv
+  241  vi test.tsv 
+  242  cat amazon_reviews_us_Books_v1_02.tsv | grep "50122160" | cut -f9 > test1.tsv
+  243  vi test.tsv 
+  244  vi test1.tsv 
+  245  vi test.tsv 
+  246  rm test.tsv 
+  247  rm test1.tsv 
+  248  ls
+  249  rm -r directory2
+  250  rm -r directory3/
+  251  ls
+  252  cd temp
+  253  rm -r temo
+  254  rm -r temp
+  255  chmod u=rwx temp
+  256  rm -r temp
+  257  ls
+  258  cd projects
+  259  ls
+  260  vi cmds.log 
+  261  cd ..
+  262  ls worksheet2
+  263  mv N.txt Y.txt worksheet2
+  264  ls
+  265  ls worksheet3
+  266  mv ws3.txt ws3.txt.clean worksheet3
+  267  ls
+  268  mv a.txt.clean a1.txt assignment1
+  269  ls
+  270  mv projects worksheet1
+  271  ls
+  272  cat amazon_reviews_us_Books_v1_02.tsv | grep "50122160" | cut -f9 > test1.tsv
+  273  rm test1.tsv 
+  274  cat amazon_reviews_us_Books_v1_02.tsv | grep "50122160" | cut -f9 > test1.txt
+  275  for f in *.txt; do echo $f; sum = 0; count = 0; for num in $(cat $f); do sum+=num | bc; ++count | bc; done ; echo "$sum/count" | bc; done
+  276  for f in *.txt; do echo $f; sum = 0; count = 0; for num in $(cat $f); do sum+=num | bc; ++count | bc; done ; echo "$sum/count" | bc; done
+  277  mkdir CUSTOMERS
+  278  mkdir PRODUCTS
+  279  cat amazon_reviews_us_Books_v1_02.tsv | grep "	50122160	" | cut -f9 > CUSTOMERS/50122160.txt
+  280  cat ../amazon_reviews_us_Books_v1_02.tsv | grep "	50122160	" | cut -f9 > CUSTOMERS/50122160.txt
+  281  ls CUSTOMERS/
+  282  ls -l CUSTOMERS/
+  283  cat ../amazon_reviews_us_Books_v1_02.tsv | grep "	50732546	" | cut -f9 > CUSTOMERS/50732546.txt
+  284  cat ../amazon_reviews_us_Books_v1_02.tsv | grep "52615377" | cut -f9 > CUSTOMERS/52615377.txt
+  285  ls -l CUSTOMERS/
+  286  cat ../amazon_reviews_us_Books_v1_02.tsv | grep "	043935806X	" | cut -f9 > PRODUCTS/043935806X.txt
+  287  cat ../amazon_reviews_us_Books_v1_02.tsv | grep "	0439139597	" | cut -f9 > PRODUCTS/0439139597.txt
+  288  cat ../amazon_reviews_us_Books_v1_02.tsv | grep "	0525947647	" | cut -f9 > PRODUCTS/0525947647.txt
+  289  ls -l PRODUCTS/
+  290  for f in *.txt; do echo $f;((sum = 0)); ((count = 0)); ((var = 0)); for num in `cat $f`; do sum=$(echo $sum+$num | bc); ((count++)); done ; mean=$(echo "scale=2; $sum/$count" | bc); echo "mean = " $mean; for num in `cat $f`; do var=$(echo $var+($num-$mean)^2 | bc); done ; variance=$(echo "scale=2; $var/$count" | bc); echo "variance = " $variance; done
+  291  head CUSTOMERS/50122160.txt 
+  292  head CUSTOMERS/50732546.txt 
+  293  cd CUSTOMERS/
+  294  for f in *.txt; do echo $f;((sum = 0)); ((count = 0)); ((var = 0)); for num in `cat $f`; do sum=$(echo $sum+$num | bc); ((count++)); done ; mean=$(echo "scale=2; $sum/$count" | bc); echo "mean = " $mean; for num in `cat $f`; do var=$(echo $var+($num-$mean)^2 | bc); done ; variance=$(echo "scale=2; $var/$count" | bc); echo "variance = " $variance; done
+  295  cd ../PRODUCTS/
+  296  for f in *.txt; do echo $f;((sum = 0)); ((count = 0)); ((var = 0)); for num in `cat $f`; do sum=$(echo $sum+$num | bc); ((count++)); done ; mean=$(echo "scale=2; $sum/$count" | bc); echo "mean = " $mean; for num in `cat $f`; do var=$(echo $var+($num-$mean)^2 | bc); done ; variance=$(echo "scale=2; $var/$count" | bc); echo "variance = " $variance; done
+  297  mkdir worksheet4
+  298  cd worksheet4
+  299  script ws4.txt
+  300  cd ..
+  301  cd worksheet4
+  302  ls
+  303  perl -pe 's/\x1b\[[0-9;]*[mG]//g' ws4.txt > ws4.txt.clean
+  304  tr -cd '\11\12\15\40-\176' < ws4.txt.clean > ws4.txt.clean2
+  305  sed -i "s///g" ws4.txt.clean2
+  306  vi ws4.txt.clean2
+  307  history > cmds.log
+  308  touch README
+  309  ls
+  310  vi README 
+  311  ls
+  312  git status
+  313  ls -a
+  314  pwd
+  315  ls -a ..
+  316  mv ../.git ../remove_git
+  317  mv ../.gitconfig ../remove_gitconfig
+  318  ll ..
+  319  ls
+  320  git status
+  321  git init
+  322  git status
+  323  git add README cmds.log ws4.txt.clean2
+  324  git status
+  325  git commit -m "Worksheet 4"
+  326  mv ../remove_gitconfig ../.gitconfig
+  327  git commit -m "Worksheet 4"
+  328  git remote add origin https://github.com/jihanyehia/worksheet4.git
+  329  git branch -M main
+  330  git push -u origin main
+  331  exit
+  332  pwd
+  333  ls
+  334  mkdir assignment2
+  335  cd assignment2
+  336  head -n 2 ../amazon_reviews_us_Books_v1_02.tsv 
+  337  cut -f 2 ../amazon_reviews_us_Books_v1_02.tsv | uniq | wc
+  338  cut -f 2 ../amazon_reviews_us_Books_v1_02.tsv | wc
+  339  cut -f 2 ../amazon_reviews_us_Books_v1_02.tsv | uniq-c
+  340  cut -f 2 ../amazon_reviews_us_Books_v1_02.tsv | uniq -c
+  341  cut -f 2 ../amazon_reviews_us_Books_v1_02.tsv | uniq-c | sort | head
+  342  cut -f 2 ../amazon_reviews_us_Books_v1_02.tsv | uniq -c | sort | head
+  343  cut -f 2 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort | head
+  344  cut -f 2 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head
+  345  cut -f 2 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | wc
+  346  cut -f 2 ../amazon_reviews_us_Books_v1_02.tsv |  wc
+  347  head -n 2 ../amazon_reviews_us_Books_v1_02.tsv
+  348  cut -f 4 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | wc
+  349  cut -f 6 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | wc
+  350  cut -d '	'  -f 6 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | wc
+  351  cut -d '	'  -f 6 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | wc-l
+  352  cut -d '	'  -f 6 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | wc -l
+  353  cut -d '	'  -f 6 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq | wc -l
+  354  cut -d '	'  -f 6 ../amazon_reviews_us_Books_v1_02.tsv | sort -u | wc -l
+  355  cut -d '	'  -f 6 ../amazon_reviews_us_Books_v1_02.tsv | sort -u | head
+  356  cut -d '	'  -f 2 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | head
+  357  cut -f 6 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head
+  358  cut -f 2 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head
+  359  cut -f 2 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head -n 100
+  360  cut -f 2 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq | sort -nr | head -n 100
+  361  cut -f 2 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head -n 100 | cut -f 2
+  362  cut -f 2 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head -n 100 > 100_customer_ids.txt
+  363  vi 100_customer_ids.txt 
+  364  head -n 2 ../amazon_reviews_us_Books_v1_02.tsv
+  365  mkdir CUSTOMERS
+  366  for num in `cut -f2 100_customer_ids.txt`; do cat ../amazon_reviews_us_Books_v1_02.tsv; grep `$num`; cut -f 8,9 > CUSTOMERS/`$num`.txt ; done
+  367  for num in `cut -f2 100_customer_ids.txt`; do cat ../amazon_reviews_us_Books_v1_02.tsv | grep `$num` | cut -f 8,9 > CUSTOMERS/`$num`.txt ; done
+  368  head -n 2 ../amazon_reviews_us_Books_v1_02.tsv
+  369  cut -f 2 ../amazon_reviews_us_Books_v1_02.tsv | sort -u | wc -l
+  370  cut -f 4 ../amazon_reviews_us_Books_v1_02.tsv | sort -u | wc -l
+  371  cut -f 6 ../amazon_reviews_us_Books_v1_02.tsv | sort -u | wc -l
+  372  cut -f 2 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head -n 100 > 100_customer_ids.txt
+  373  cut -f 4 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head -n 100 > 100_product_ids.txt
+  374  head 100_customer_ids.txt 
+  375  head 100_product_ids.txt 
+  376  mkdir CUSTOMERS
+  377  for num in `tr -s " " < 100_customer_ids.txt | cut -d " " -f3`; do cat ../amazon_reviews_us_Books_v1_02.tsv | grep "$num" | cut -f 8,9 > CUSTOMERS/$num.txt ; done
+  378  mkdir PRODUCTS
+  379  for num in `tr -s " " < 100_product_ids.txt | cut -d " " -f3`; do cat ../amazon_reviews_us_Books_v1_02.tsv; grep "$num"; cut -f 8,9 > PRODUCTS/$num.txt ; done
+  380  for num in `tr -s " " < 100_product_ids.txt | cut -d " " -f3`; do cat ../amazon_reviews_us_Books_v1_02.tsv | grep "$num" | cut -f 8,9 > PRODUCTS/$num.txt ; done
+  381  vi ~/ .bashrc
+  382  vi ~/.bashrc
+  383  w CUSTOMERS
+  384  l CUSTOMERS/
+  385  vi ~/.bashrc
+  386  source ~/.bashrc 
+  387  alias
+  388  source ~/.bashrc
+  389  vi ~/.bashrc
+  390  source ~/.bashrc
+  391  w CUSTOMERS
+  392  ls
+  393  w PRODUCTS/
+  394  ls CUSTOMERS/
+  395  ls PRODUCTS/
+  396  vi ~/.bashrc
+  397  source ~/.bashrc
+  398  w PRODUCTS/
+  399  w CUSTOMERS
+  400  vi ~/.bashrc
+  401  source ~/.bashrc
+  402  l
+  403  l CUSTOMERS/
+  404  vi ~/.bashrc
+  405  source ~/.bashrc
+  406  vi ~/.bashrc
+  407  source ~/.bashrc
+  408  vi ~/.bashrc
+  409  source ~/.bashrc
+  410  vi ~/.bashrc
+  411  source ~/.bashrc
+  412  vi ~/.bashrc
+  413  source ~/.bashrc
+  414  vi ~/.bashrc
+  415  source ~/.bashrc
+  416  vi ~/.bashrc
+  417  source ~/.bashrc
+  418  vi ~/.bashrc
+  419  source ~/.bashrc
+  420  vi ~/.bashrc
+  421  source ~/.bashrc
+  422  vi ~/.bashrc
+  423  source ~/.bashrc
+  424  vi ~/.bashrc
+  425  source ~/.bashrc
+  426  pwd
+  427  w
+  428  cd CUSTOMERS/
+  429  w
+  430  pwd
+  431  ls -a
+  432  ls -la | wc
+  433  w
+  434  vi ~/.bashrc
+  435  source ~/.bashrc
+  436  w
+  437  ls -la | wc
+  438  ls -la
+  439  cd ..
+  440  cd CUSTOMERS/
+  441  w
+  442  cd ../PRODUCTS/
+  443  w
+  444  cd ../CUSTOMERS/
+  445  for f in *.txt; do corr=`~/datamash-1.3/datamash -W ppearson 1:2 < $f`; id=$(echo $f | cut -d '.' -f1); echo "$id	$corr" >>corr_customers; done
+  446  cat corr_customers | sort -k2 | head
+  447  cat corr_customers | sort -nr -k2 | head
+  448  cd ../PRODUCTS/
+  449  for f in *.txt; do corr=`~/datamash-1.3/datamash -W ppearson 1:2 < $f`; id=$(echo $f | cut -d '.' -f1); echo "$id	$corr" >>corr_products; done
+  450  cat corr_products | sort -k2 | head
+  451  cat corr_products | sort -nr -k2 | head
+  452  cd ../CUSTOMERS/
+  453  for f in *.txt; do ((sum = 0)); ((count = 0)); for num in `cut -f2 $f`; do sum=$(echo $sum+$num | bc); ((count++)); done ; mean=$(echo "scale=2; $sum/$count" | bc); id=$(echo $f | cut -d '.' -f1); echo "$id	$mean" >>mean ; done
+  454  cat mean | sort -k2 | head
+  455  cat mean | sort -nr -k2 | head
+  456  cd ../PRODUCTS/
+  457  for f in *.txt; do ((sum = 0)); ((count = 0)); for num in `cut -f1 $f`; do sum=$(echo $sum+$num | bc); ((count++)); done ; mean=$(echo "scale=2; $sum/$count" | bc); id=$(echo $f | cut -d '.' -f1); echo "$id	$mean" >>mean ; done
+  458  cat mean | sort -k2 | head
+  459  cat mean | sort -nr -k2 | head
+  460  clr
+  461  clear
+  462  mkdir assignment2
+  463  cd assignment2
+  464  script a2.txt
+  465  ls
+  466  perl -pe 's/\x1b\[[0-9;]*[mG]//g' a2.txt > a2.txt.clean
+  467  tr -cd '\11\12\15\40-\176' < a2.txt.clean > a2.txt.clean2
+  468  sed -i "s///g" a2.txt.clean2
+  469  vi a2.txt.clean2
+  470  git init
+  471  git add a2.txt.clean2
+  472  git status 
+  473  git commit -m "Assignment 2"
+  474  git remote add origin https://github.com/jihanyehia/Assignment2.git
+  475  git branch -M main
+  476  git push -u origin main
+  477  git status 
+  478  exit
+  479  history
+  480  history --help
+  481  exit
+  482  cut -f 2 ../amazon_reviews_us_Books_v1_02.tsv | sort | uniq -c | sort -nr | head -n 1000 > 1000_customer_ids.txt
+  483  mkdir CUSTOMERS
+  484  for num in `tr -s " " < 1000_customer_ids.txt | cut -d " " -f3`; do cat ../amazon_reviews_us_Books_v1_02.tsv | grep "$num" > CUSTOMERS/$num.txt ; done
+  485  cd CUSTOMERS/
+  486  ls
+  487  cat 53096155.txt | head
+  488  tmux
+  489  cd worksheet5
+  490  ls
+  491  history > cmds.log
+  492  ls
+  493  perl -pe 's/\x1b\[[0-9;]*[mG]//g' ws5.txt > ws5.txt.clean
+  494  tr -cd '\11\12\15\40-\176' < ws5.txt.clean > ws5.txt.clean2
+  495  sed -i "s///g" ws5.txt.clean2
+  496  vi ws5.txt.clean2
+  497  git init
+  498  git add ws5.txt.clean2
+  499  git add cmds.log 
+  500  git status
+  501  git commit -m "Worksheet 5"
+  502  git remote add origin https://github.com/jihanyehia/worksheet5.git
+  503  git branch -M main
+  504  git push -u origin main
+  505  exit
+  506  echo ""UNIX""
+  507  echo "\"UNIX\""
+  508  ls > file.txt
+  509  ls
+  510  cat file.txt 
+  511  cp file.txt file1.txt
+  512  stat file.txt 
+  513  stat file1.txt 
+  514  mv file.txt file2.txt
+  515  stat file.txt
+  516  stat file2.txt 
+  517  rm file2.txt 
+  518  rm -c file1.txt 
+  519  rm -i file1.txt 
+  520  cp file1.txt file2.txt
+  521  cat file1.txt file2.txt >> file3.txt
+  522  cat file3.txt 
+  523  cal
+  524  prompt
+  525  export DATETIME = `date "+%Y%m%d_%H%M%S"`
+  526  export DATETIME=`date "+%Y%m%d_%H%M%S"`
+  527  mkdir PRODUCTS
+  528  cd PRODUCTS
+  529  cd ..
+  530  cp ../worksheet4/PRODUCTS/043935806X.txt PRODUCTS/043935806X.$DATETIME.txt
+  531  ls PRODUCTS/
+  532  vi PRODUCTS/043935806X.20211012_180349.txt 
+  533  ls
+  534  rm -r file*.txt
+  535  ls
+  536  rm outfile 
+  537  ls
+  538  ls worksheet5
+  539  ls worksheet4/PRODUCTS/
+  540  ls worksheet4/PRODUCTS/043935806X.txt 
+  541  head  worksheet4/PRODUCTS/043935806X.txt 
+  542  mkdir worksheet6
+  543  cd worksheet6
+  544  script ws6.txt
+  545  cd ..
+  546  rm -rf worksheet6
+  547  ls
+  548  head  assignment2/PRODUCTS/043935806X.txt 
+  549  exit
+  550  mkdir PRODUCTS
+  551  export DATETIME=`date "+%Y%m%d_%H%M%S"`
+  552  echo $DATETIME
+  553  cp ../assignment2/PRODUCTS/043935806X.txt PRODUCTS/043935806X.$DATETIME.txt
+  554  ls PRODUCTS/
+  555  vi PRODUCTS/043935806X.20211014_011604.txt 
+  556  ln -s PRODUCTS/043935806X.20211014_011604.txt PRODUCTS/043935806X.LATEST.txt
+  557  ls PRODUCTS/
+  558  ls -latr PRODUCTS/
+  559  cd PRODUCTS/
+  560  vi cronfile
+  561  vi cronfile 
+  562  crontab cronfile
+  563  crontab -l
+  564  ls
+  565  ls -latr
+  566  ls
+  567  crontab -l
+  568  crontab -r
+  569  crontab -l
+  570  vi cronfile 
+  571  crontab cronfile
+  572  crontab -l
+  573  ls
+  574  head 043935806X.LATEST.txt 
+  575  head 043935806X.20211014_011604.txt 
+  576  ls -latr
+  577  rm 043935806X.LATEST.txt 
+  578  ls -latr
+  579  ln -s 043935806X.20211014_011604.txt 043935806X.LATEST.txt
+  580  ls -latr
+  581  crontab -l
+  582  ls 
+  583  head 043935806X.LATEST.txt 
+  584  awk 'BEGIN { total = 0 }{ total += $1 } END { print total/NR }' 043935806X.LATEST.txt &> 043935806X.AVGRATING.txt
+  585  ls
+  586  ls -latr
+  587  cat 043935806X.AVGRATING.txt 
+  588  vi 043935806X.LATEST.txt 
+  589  ls -latr
+  590  vi 043935806X.20211014_011604.txt 
+  591  crontab -l
+  592  ls -latr
+  593  cat 043935806X.AVGRATING.txt 
+  594  ls -latr
+  595  vi cronfile 
+  596  crontab -l
+  597  ls
+  598  ls -latr
+  599  cat 043935806X.AVGRATING.txt 
+  600  ls -latr
+  601  grep CRON /var/log/syslog
+  602  ls -latr
+  603  cat 043935806X.AVGRATING.txt 
+  604  vi cronfile 
+  605  ls -latr
+  606  ls
+  607  mkdir worksheet6
+  608  cd worksheet6
+  609  script ws6.txt
+  610  crontab -l
+  611  crontab -e
+  612  exit
+  613  mkdir PRODUCTS
+  614  export DATETIME=`date "+%Y%m%d_%H%M%S"`
+  615  cp ../assignment2/PRODUCTS/043935806X.txt PRODUCTS/043935806X.$DATETIME.txt
+  616  ls PRODUCTS/
+  617  cd PRODUCTS
+  618  vi 043935806X.20211014_222008.txt 
+  619  ln -s 043935806X.20211014_011604.txt 
+  620  043935806X.LATEST.txt
+  621  ln -s 043935806X.20211014_011604.txt 043935806X.LATEST.txt
+  622  ls -latr
+  623  rm 043935806X.20211014_011604.txt 
+  624  ls -latr
+  625  rm 043935806X.LATEST.txt 
+  626  ls -latr
+  627  ln -s 043935806X.20211014_222008.txt 043935806X.LATEST.txt 
+  628  ls -latr
+  629  vi cronfile
+  630  crontab cronfile 
+  631  crontab -l
+  632  ls -latr
+  633  cat 043935806X.AVGRATING.txt 
+  634  ls
+  635  worksheet6
+  636  cd worksheet6
+  637  ls
+  638  cd PRODUCTS/
+  639  ls
+  640  crontab -l
+  641  crontab -r
+  642  crontab -l
+  643  vi cronfile 
+  644  rm 043935806X.AVGRATING.txt 
+  645  crontab cronfile
+  646  crontab -l
+  647  ls
+  648  ls -latr
+  649  crontab -r
+  650  vi cronfile 
+  651  crontab cronfile
+  652  crontab -l
+  653  ls -latr
+  654  cat 043935806X.AVGRATING.txt 
+  655  head 043935806X.AVGRATING.txt 
+  656  crontab -r
+  657  awk 'BEGIN { total = 0 }{ total += $1 } END { print total/NR }'~/worksheet6/PRODUCTS/043935806X.LATEST.txt &> ~/worksheet6/PRODUCTS/043935806X.AVGRATING.txt
+  658  cat 043935806X.AVGRATING.txt 
+  659  vi cronfile 
+  660  cat cron
+  661  cat cronfile 
+  662  awk 'BEGIN { total = 0 }{ total += $1 } END { print total/NR }' ~/worksheet6/PRODUCTS/043935806X.LATEST.txt &> ~/worksheet6/PRODUCTS/043935806X.AVGRATING.txt
+  663  cat 043935806X.AVGRATING.txt 
+  664  rm 043935806X.AVGRATING.txt 
+  665  crontab cronfile 
+  666  ls -latr
+  667  cat 043935806X.A
+  668  cat 043935806X.AVGRATING.txt 
+  669  head 043935806X.AVGRATING.txt 
+  670  ls -latr
+  671  head 043935806X.AVGRATING.txt 
+  672  ls -latr
+  673  crontab -l
+  674  vi cronfile
+  675  crontab -r
+  676  crontab -l
+  677  awk 'BEGIN { total = 0 }{ total += $1 } END { print total/NR }' ~/worksheet6/PRODUCTS/043935806X.LATEST.txt &> ~/worksheet6/PRODUCTS/043935806X.AVGRATING.txt
+  678  cat 043935806X.AVGRATING.txt 
+  679  vi cron
+  680  vi cronfile 
+  681  crontab cronfile
+  682  crontab -l
+  683  ps
+  684  ps -a
+  685  ls
+  686  crontab -r
+  687  crontab -l
+  688  vi cronfile 
+  689  cp cronfile cronfile2
+  690  vi cronfile2
+  691  crontab cronfile2
+  692  crontab -l
+  693  crontab -r
+  694  crontab -l
+  695  vi cronfile2
+  696  crontab cronfile2
+  697  crontab -l
+  698  cat AVG.txt 
+  699  crontab -r
+  700  vi cronfile2
+  701  rm AVG.txt 
+  702  crontab cronfile2
+  703  cat AVG.txt 
+  704  vi cronfile
+  705  head cronfile
+  706  crontab -r
+  707  head cronfile
+  708  crontab cronfile
+  709  crontab -l
+  710  ls -latr
+  711  cat 043935806X.AVGRATING.txt 
+  712  crontab -r
+  713  cd ../..
+  714  rm -rf worksheet6
+  715  ls
+  716  rm 043935806X.AVGRATING.txt 
+  717  ls
+  718  mkdir worksheet6
+  719  cd worksheet6
+  720  script ws6.txt
+  721  history > cmds.log
+  722  perl -pe 's/\x1b\[[0-9;]*[mG]//g' ws6.txt > ws6.txt.clean
+  723  tr -cd '\11\12\15\40-\176' < ws6.txt.clean > ws6.txt.clean2
+  724  sed -i "s///g" ws6.txt.clean2
+  725  vi ws6.txt.clean2
+  726  git init
+  727  git add cmds.log 
+  728  git add ws6.txt.clean2
+  729  git status
+  730  git commit -m "Worksheet 6"
+  731  git remote add origin https://github.com/jihanyehia/worksheet6.git
+  732  git branch -M main
+  733  git push -u origin main
+  734  mkdir worksheet7
+  735  rm -r worksheet7/
+  736  ls
+  737  ..
+  738  cd ..
+  739  ls
+  740  mkdir worksheet7
+  741  cd worksheet7
+  742  head ../amazon_reviews_us_Books_v1_02.tsv 
+  743  exit
+  744  ls
+  745  cd worksheet7
+  746  ls
+  747  vi sedfile
+  748  awk '$4==043935806X {print $14}  ../amazon_reviews_us_Books_v1_02.tsv | sed -f sedfile > 043935806X_review_body.txt
+  749  awk '$4==043935806X {print $14}  ../amazon_reviews_us
+  750  ls
+  751  awk '$4==043935806X {print $14}  ../amazon_reviews_us_Books_v1_02.tsv > 043935806X.txt
+  752  sed -f sedfile ../amazon_reviews_us_Books_v1_02.tsv | awk '$4==043935806X {print $14}  > 043935806X_review_body.txt
+  753  sed -f sedfile ../amazon_reviews_us_Books_v1_02.tsv | awk '$4==043935806X {print $14}
+  754  sed -f sedfile ../amazon_reviews_us_Books_v1_02.tsv | awk '$4==043935806X {print $14}'  > 043935806X_review_body.txt
+  755  awk '$4=043935806X {print $14}'  ../amazon_reviews_us_Books_v1_02.tsv | sed -f sedfile > 043935806X_review_body.txt
+  756  head 043935806X_review_body.txt 
+  757  cat 043935806X_review_body.txt 
+  758  cat ../amazon_reviews_us_Books_v1_02.tsv | grep 043935806X | head
+  759  awk '$4==043935806X {print $14}'  ../amazon_reviews_us_Books_v1_02.tsv | head
+  760  awk '/043935806X/ {print $14}'  ../amazon_reviews_us_Books_v1_02.tsv | head
+  761  awk '$4==043935806X {print $14}'  ../amazon_reviews_us_Books_v1_02.tsv | head
+  762  awk '/$4=043935806X/ {print $14}'  ../amazon_reviews_us_Books_v1_02.tsv | head
+  763  awk '/$4==043935806X/ {print $14}'  ../amazon_reviews_us_Books_v1_02.tsv | head
+  764  vi ../amazon_reviews_us_Books_v1_02.tsv | grep 043935806X | head
+  765  ps
+  766  kill 737548
+  767  ps
+  768  kill --help
+  769  exit
+  770  cd worksheet7
+  771  ls
+  772  ps
+  773  less ../amazon_reviews_us_Books_v1_02.tsv
+  774  vi ../amazon_reviews_us_Books_v1_02.tsv
+  775  ps
+  776  kill -f 737709
+  777  kill -9 737709
+  778  ps
+  779  cat ../amazon_reviews_us_Books_v1_02.tsv | grep 043935806X | head > try.txt
+  780  vi try.txt 
+  781  awk '/043935806X/ {print $14}'  ../amazon_reviews_us_Books_v1_02.tsv | head
+  782  head ../amazon_reviews_us_Books_v1_02.tsv 
+  783  vi try.txt 
+  784  awk -F "	" '/043935806X/ {print $14}'  ../amazon_reviews_us_Books_v1_02.tsv | head
+  785  head try.txt 
+  786  awk -F "	" '/043935806X/ {print $14}'  try.txt | head
+  787  sed -f sedfile ../amazon_reviews_us_Books_v1_02.tsv | awk -F "	" '/043935806X/ {print $14}' > 043935806X_review_body.txt
+  788  head 043935806X_review_body.txt 
+  789  vi sedfile 
+  790  sed -f sedfile ../amazon_reviews_us_Books_v1_02.tsv | awk -F "	" '/043935806X/ {print $14}' > 043935806X_review_body.txt
+  791  head 043935806X_review_body.txt 
+  792  head try.txt 
+  793  vi sedfile 
+  794  sed -f sedfile ../amazon_reviews_us_Books_v1_02.tsv | awk -F "	" '/043935806X/ {print $14}' > 043935806X_review_body.txt
+  795  head 043935806X_review_body.txt 
+  796  head -n 1 043935806X_review_body.txt 
+  797  head -n 1 try.txt 
+  798  ls
+  799  rm try.txt sedfile 043935806X_review_body.txt 
+  800  ls
+  801  ls .
+  802  ls -latr
+  803  vi sed file
+  804  ls
+  805  ls -latr
+  806  script ws7.txt
+  807  vi sedfile
+  808  sed -f sedfile ../amazon_reviews_us_Books_v1_02.tsv | awk -F "	" '/043935806X/ {print $14}' > 043935806X_review_body.txt
+  809  cd worksheet7
+  810  head 043935806X_review_body.txt 
+  811  tail 043935806X_review_body.txt 
+  812  vi ws7.txt 
+  813  rm -rf weeksheet7
+  814  ls
+  815  rm -rf worksheet7
+  816  ls
+  817  mkdir worksheet7
+  818  cd worksheet7
+  819  script ws7.txt
+  820  vi sedfile
+  821  sed -f sedfile ../amazon_reviews_us_Books_v1_02.tsv | awk -F "	" '/043935806X/ {print $14}' > 043935806X_review_body.txt
+  822  script ws7.txt
+  823  perl -pe 's/\x1b\[[0-9;]*[mG]//g' ws7.txt > ws7.txt.clean
+  824  tr -cd '\11\12\15\40-\176' < ws7.txt.clean > ws7.txt.clean2
+  825  sed -i "s///g" ws7.txt.clean2
+  826  vi ws7.txt.clean2
+  827  rm ws7.txt ws7.txt.clean ws7.txt.clean2
+  828  ls
+  829  script ws7.txt
+  830  perl -pe 's/\x1b\[[0-9;]*[mG]//g' ws7.txt > ws7.txt.clean
+  831  tr -cd '\11\12\15\40-\176' < ws7.txt.clean > ws7.txt.clean2
+  832  sed -i "s///g" ws7.txt.clean2
+  833  vi ws7.txt.clean2
+  834  history > cmds.log
